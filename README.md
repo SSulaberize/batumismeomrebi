@@ -1,0 +1,2 @@
+# batumismeomrebi
+ყინულის ჰოკეის გუნდი
