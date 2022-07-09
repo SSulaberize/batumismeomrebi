@@ -31,6 +31,10 @@
   background-color: var(--color1);
   color: var(--color2);
 }
+.fa-bars{
+  color: var(--color1);
+  display: none;
+}
 /* Main elements */
 body {
   padding-top: 200px;
@@ -80,7 +84,7 @@ footer {
 .header {
   position: fixed;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   top: 0;
@@ -112,7 +116,7 @@ footer {
 .background-image {
   position: relative;
   background-image: url("../images/1.jpg");
-  background-size: contain;
+  background-size: cover;
   height: 950px;
   background-repeat: no-repeat;
   width: 100%;
@@ -134,6 +138,7 @@ footer {
   align-items: center;
   height: 1000px;
   width: 100%;
+  margin-top: 50px;
 }
 .text {
   display: flex;
@@ -162,15 +167,18 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  grid-template-rows: 400px;
 }
 .players-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 300px;
-  width: 100%;
-  height: 400px;
   box-shadow: 5px 2px 10px #888888;
+}
+.players-paragraph{
+  font-family: 'BPG Nino Mtavruli';
+  color: var(--color1);
+  padding: 3px;
 }
 .players {
   height: 270px;
@@ -179,7 +187,6 @@ footer {
 }
 
 /* Games */
-
 .black-square-1 {
   display: flex;
   flex-direction: column;
@@ -199,9 +206,7 @@ footer {
   justify-items: center;
   align-items: center;
   height: 250px;
-  width: 250px;
   border-radius: 10px;
-  /* width: 100%; */
   background-color: var(--color2);
 }
 .teams {
@@ -253,23 +258,40 @@ button:hover {
 /* Child team */
 .white-square {
   width: 100%;
-  height: 750px;
+  height: 500px;
 }
 .block {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  /* max-width: 1200px; */
+  justify-content: space-around;
   width: 100%;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .text-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   max-width: 500px;
   width: 100%;
 }
+.kids{
+  text-align:left;
+  margin-top: 25px;
+}
+.triangle{
+  display: flex;
+  flex-flow: row wrap;
+}
+.duo{
+  display: flex;
+  flex-direction: column;
+}
+.children{
+  max-width: 500px;
+  width: 100%;
+}
+
 /* Fans */
 .black-square {
   display: flex;
@@ -299,37 +321,29 @@ button:hover {
   width: 100%;
 }
 .fans {
-  max-width: 400px;
-  width: 100%;
+  width: 400px;
 }
 /* Contact */
 .contact-us {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin-top: 50px;
+  margin: 50px 0px;
 }
 .contact {
   display: flex;
-  flex-direction: column;
-  height: 336px;
-  max-width: 600px;
-  width: 100%;
+  flex-flow: column wrap;
 }
 .contact-1 {
   display: flex;
   flex-flow: row wrap;
 }
-.picture {
-  max-width: 600px;
-  width: 100%;
-}
 .image-blocks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 7px;
-  margin: 20px;
+  gap: 10px;
+  grid-template-rows: 200px;
+  margin-top: 25px;
 }
 .location {
   font-family: "BPG Nino Mtavruli Bold";
@@ -370,12 +384,28 @@ button:hover {
   font-family: "BPG Nino Mtavruli Bold";
   color: var(--color1);
 }
+.picture{
+  max-width: 600px;
+  width: 100%;
+}
+.map{
+  max-width: 600px;
+  width: 100%;
+  height: 200px;
+}
 /* Footer */
 .footer {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-around;
   padding-top: 100px;
+}
+.low-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
 }
 .nav-2 {
   font-family: "BPG Nino Mtavruli Bold";
@@ -400,7 +430,7 @@ button:hover {
 }
 .partners {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 75px;
@@ -408,7 +438,8 @@ button:hover {
   width: 100%;
 }
 .logo {
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
 }
 .logo-1 {
   height: 100px;
