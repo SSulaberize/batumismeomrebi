@@ -2,6 +2,9 @@
   .image-blocks {
     grid-template-columns: 1fr;
   }
+  .contact {
+    align-items: center;
+  }
 }
 @media (max-width: 1217px) {
   .fans-box {
@@ -15,11 +18,32 @@
   }
 }
 @media (max-width: 1169px) {
-  .high-nav {
+  .navigation {
     display: none;
   }
-  .fa-bars {
+  .toggle-button {
     display: block;
+    right: 20px;
+  }
+  .navigation.active{
+    display: block;
+  }
+  .high-nav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    right: 20px;
+    top: 110px;
+  }
+  .nav:hover {
+    padding: 2.5px;
+  }
+  .header{
+    justify-content: space-between;
+  }
+  header{
+    height: 220px;
   }
   .background-image {
     background-position: center;
@@ -34,13 +58,13 @@
     text-align: center;
     padding-top: 25px;
   }
-.partners{
+  .partners {
     flex-direction: column;
   }
   footer {
     height: 1100px;
   }
-  .logo{
+  .logo {
     margin-bottom: 15px;
   }
 }
@@ -76,16 +100,19 @@
   .image-blocks {
     grid-template-rows: 250px;
   }
+  .contact {
+    text-align: center;
+  }
 }
 @media (max-width: 560px) {
   .background-text-container {
     left: 5px;
   }
 }
-@media (max-width: 535px){
-    footer{
-        height: 1150px;
-    }
+@media (max-width: 535px) {
+  footer {
+    height: 1150px;
+  }
 }
 @media (max-width: 510px) {
   .games {
@@ -96,10 +123,9 @@
   }
 }
 @media (max-width: 472px) {
-.background-text-container{
+  .background-text-container {
     left: 0px;
-}
-
+  }
 }
 @media (max-width: 448px) {
   .fans {
@@ -115,5 +141,21 @@
   }
   .black-square {
     height: 1100px;
+  }
+  .high-nav{
+    top: 150px;
+    left: 10px;
+    align-items: flex-start;
+    width: 200px;
+  }
+  .background-image{
+    margin-top: 90px;
+  }
+  .logo{
+    width: 130px;
+    margin-left: 10px;
+  }
+  header{
+    height: 260px;
   }
 }

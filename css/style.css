@@ -31,13 +31,18 @@
   background-color: var(--color1);
   color: var(--color2);
 }
-.fa-bars{
-  color: var(--color1);
-  display: none;
-}
 /* Main elements */
-body {
-  padding-top: 200px;
+header{
+  position:fixed;
+  height: 180px;
+  width: 100%;
+  background-color: var(--color2);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+body{
+  padding-top: 180px;
 }
 h2 {
   font-family: "BPG Nino Mtavruli Bold";
@@ -79,19 +84,15 @@ footer {
   width: 100%;
   background-color: var(--color3);
 }
-
 /* Header */
 .header {
-  position: fixed;
+  position: relative;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  top: 0;
-  left: 0;
-  z-index: 1;
   width: 100%;
-  height: 200px;
+  height: 170px;
   padding-top: 10px;
   background-color: var(--color2);
 }
@@ -111,6 +112,13 @@ footer {
   padding: 10px;
   background-color: var(--color1);
   border-radius: 25px;
+}
+.toggle-button{
+  position: absolute;
+    top: 80px;
+    right: 150px;
+    color: var(--color1);
+    display: none;
 }
 /* Section 1 */
 .background-image {
@@ -185,7 +193,6 @@ footer {
   max-width: 300px;
   width: 100%;
 }
-
 /* Games */
 .black-square-1 {
   display: flex;
@@ -241,7 +248,7 @@ footer {
 .info-text {
   margin-top: 10px;
 }
-button {
+.button {
   height: 40px;
   width: 120px;
   background-color: var(--color1);
@@ -251,7 +258,7 @@ button {
   color: var(--color2);
   transition: all 0.5s linear;
 }
-button:hover {
+.button:hover {
   background-color: red;
   color: var(--color3);
 }
@@ -291,7 +298,6 @@ button:hover {
   max-width: 500px;
   width: 100%;
 }
-
 /* Fans */
 .black-square {
   display: flex;
@@ -362,7 +368,6 @@ button:hover {
   max-width: 600px;
   width: 100%;
   height: 40px;
-  color: #000;
   font-family: "BPG Ingiri Arial";
   margin: 10px 0px;
   border-color: var(--color1);
@@ -371,10 +376,13 @@ button:hover {
   font-family: "BPG Nino Mtavruli Bold";
   color: var(--color1);
 }
+.area:focus{
+  outline: none;
+}
 .text-area {
   max-width: 600px;
   width: 100%;
-  height: 218px;
+  height: 165px;
   color: #000;
   font-family: "BPG Ingiri Arial";
   resize: none;
@@ -383,6 +391,24 @@ button:hover {
 .text-area::placeholder {
   font-family: "BPG Nino Mtavruli Bold";
   color: var(--color1);
+}
+.text-area:focus{
+  outline: none;
+}
+.button-1 {
+  height: 40px;
+  max-width:600px;
+  width: 100%;
+  background-color: var(--color1);
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: "BPG Nino Mtavruli Bold";
+  color: var(--color2);
+  transition: all 0.5s linear;
+}
+.button-1:hover {
+  background-color: red;
+  color: var(--color3);
 }
 .picture{
   max-width: 600px;
@@ -417,7 +443,6 @@ button:hover {
 }
 .nav-2:hover {
   background-color: var(--color1);
-  color: var(--color3);
 }
 .bottom {
   max-width: 1268.8px;

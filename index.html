@@ -18,9 +18,9 @@
   <body>
     <header>
       <div class="header">
-        <a href="index.html"><img src="images/logo.svg" alt="Logo" /></a>
-        <nav>
-          <ul class="high-nav">
+        <a href="index.html"><img class="logo" src="images/logo.svg" alt="Logo" /></a>
+        <nav class="navigation" id="navigation-bar">
+          <ul class="high-nav" >
             <li><a class="nav" href="#main">მთავარი</a></li>
             <li><a class="nav" href="#our-team">ჩვენი გუნდი</a></li>
             <li><a class="nav" href="#schedule">თამაშების განრიგი</a></li>
@@ -29,7 +29,9 @@
             <li><a class="nav" href="#contact-us">დაგვიკავშირდით</a></li>
           </ul>
         </nav>
-        <i class="fa-solid fa-bars"></i>
+        <div class="toggle-button" id="togglebutton">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
     </header>
     <section id="main">
@@ -418,14 +420,10 @@
         <h3 class="h3-2">დაგვიკავშიდრით</h3>
         <div class="image-blocks">
           <div class="contact">
-            <div class="contact-1">
-              <span class="location">მისამართი:</span>
-              <a
-                class="location"
-                href="https://www.google.ge/maps/place/20+%E1%83%A8%E1%83%94%E1%83%A0%E1%83%98%E1%83%A4+%E1%83%AE%E1%83%98%E1%83%9B%E1%83%A8%E1%83%98%E1%83%90%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1+%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%90,+%E1%83%91%E1%83%90%E1%83%97%E1%83%A3%E1%83%9B%E1%83%98/@41.6370288,41.6035664,16z/data=!4m5!3m4!1s0x406785dfa3bfeb1f:0x3334ac0e7e7981c4!8m2!3d41.6372312!4d41.6094294?hl=ka&authuser=0"
-                >შერიფ ხიმშლიაშვილის ქ. 20, ბათუმი, აჭარის არ, საქართველო</a
-              >
-            </div>
+            <span class="location"
+              >მისამართი: შერიფ ხიმშლიაშვილის ქ. 20, ბათუმი, აჭარის არ,
+              საქართველო</span
+            >
             <div class="contact-1">
               <span class="location">ტელეფონი:</span>
               <a class="location" href="tel:+995-442-111-333"
@@ -477,6 +475,7 @@
               name="subject"
               id="subject"
               placeholder="სათაური"
+              required
             />
             <input
               class="area"
@@ -484,13 +483,16 @@
               name="email"
               id="email"
               placeholder="ელ-ფოსტა"
+              required
             />
             <textarea
               class="text-area"
               name="textarea"
               id="text"
               placeholder="ტექსტი"
+              required
             ></textarea>
+            <button class="button-1" type="submit">წარგდენა</button>
           </div>
         </div>
       </div>
@@ -557,3 +559,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+ 
