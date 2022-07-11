@@ -2,6 +2,9 @@
   --color1: #5e17eb;
   --color2: #ffffff;
   --color3: #000000;
+  --font1: 'BPG Nino Mtavruli';
+  --font2: 'BPG Nino Mtavruli Bold';
+  --font3: 'BPG Ingiri Arial';
 }
 /* colors */
 .main-color {
@@ -45,11 +48,11 @@ body{
   padding-top: 180px;
 }
 h2 {
-  font-family: "BPG Nino Mtavruli Bold";
+  font-family: var(--font2);
   font-size: 35px;
 }
 h3 {
-  font-family: "BPG Nino Mtavruli Bold";
+  font-family: var(--font2);
   font-size: 25px;
 }
 .h3-2::after {
@@ -69,15 +72,15 @@ h3 {
   background-color: var(--color1);
 }
 h4 {
-  font-family: "BPG Nino Mtavruli Bold";
+  font-family: var(--font2);
   font-size: 20px;
 }
 h5 {
-  font-family: "BPG Nino Mtavruli Bold";
+  font-family: var(--font2);
   font-size: 15px;
 }
 p {
-  font-family: "BPG Nino Mtavruli";
+  font-family: var(--font1)
 }
 footer {
   height: 550px;
@@ -103,7 +106,7 @@ footer {
   width: 1000px;
 }
 .nav {
-  font-family: "BPG Nino Mtavruli Bold";
+  font-family: var(--font2);
   color: var(--color1);
   transition: all 0.5s linear;
 }
@@ -184,7 +187,7 @@ footer {
   box-shadow: 5px 2px 10px #888888;
 }
 .players-paragraph{
-  font-family: 'BPG Nino Mtavruli';
+  font-family: var(--font1);
   color: var(--color1);
   padding: 3px;
 }
@@ -254,7 +257,7 @@ footer {
   background-color: var(--color1);
   border-radius: 15px;
   margin-top: 20px;
-  font-family: "BPG Nino Mtavruli Bold";
+  font-family: var(--font2);
   color: var(--color2);
   transition: all 0.5s linear;
 }
@@ -352,7 +355,7 @@ footer {
   margin-top: 25px;
 }
 .location {
-  font-family: "BPG Nino Mtavruli Bold";
+  font-family: var(--font2);
   color: var(--color1);
   margin: 15px 2px 15px 0px;
 }
@@ -368,12 +371,12 @@ footer {
   max-width: 600px;
   width: 100%;
   height: 40px;
-  font-family: "BPG Ingiri Arial";
+  font-family: var(--font3);
   margin: 10px 0px;
   border-color: var(--color1);
 }
 .area::placeholder {
-  font-family: "BPG Nino Mtavruli Bold";
+  font-family: var(--font2);
   color: var(--color1);
 }
 .area:focus{
@@ -381,15 +384,15 @@ footer {
 }
 .text-area {
   max-width: 600px;
-  width: 100%;
+  width: 100%;   
   height: 165px;
   color: #000;
-  font-family: "BPG Ingiri Arial";
+  font-family: var(--font3);
   resize: none;
   border-color: var(--color1);
 }
 .text-area::placeholder {
-  font-family: "BPG Nino Mtavruli Bold";
+  font-family: var(--font2);
   color: var(--color1);
 }
 .text-area:focus{
@@ -402,7 +405,7 @@ footer {
   background-color: var(--color1);
   border-radius: 5px;
   margin-top: 10px;
-  font-family: "BPG Nino Mtavruli Bold";
+  font-family: var(--font2);
   color: var(--color2);
   transition: all 0.5s linear;
 }
@@ -434,7 +437,7 @@ footer {
   width: 100%;
 }
 .nav-2 {
-  font-family: "BPG Nino Mtavruli Bold";
+  font-family: var(--font2);
   font-size: 20px;
   color: var(--color2);
   padding: 5px;
@@ -449,7 +452,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-family: "BPG Nino Mtavruli";
+  font-family: var(--font3);
   color: #888888;
   margin-top: 100px;
 }

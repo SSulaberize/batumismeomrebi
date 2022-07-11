@@ -21,12 +21,12 @@
         <a href="index.html"><img class="logo" src="images/logo.svg" alt="Logo" /></a>
         <nav class="navigation" id="navigation-bar">
           <ul class="high-nav" >
-            <li><a class="nav" href="#main">მთავარი</a></li>
-            <li><a class="nav" href="#our-team">ჩვენი გუნდი</a></li>
-            <li><a class="nav" href="#schedule">თამაშების განრიგი</a></li>
-            <li><a class="nav" href="#kids">ბავშვები</a></li>
-            <li><a class="nav" href="#fan-club">გულშემატკივართა კლუბი</a></li>
-            <li><a class="nav" href="#contact-us">დაგვიკავშირდით</a></li>
+            <li class="navi"><a class="nav" href="#main">მთავარი</a></li>
+            <li class="navi"><a class="nav" href="#our-team">ჩვენი გუნდი</a></li>
+            <li class="navi"><a class="nav" href="#schedule">თამაშების განრიგი</a></li>
+            <li class="navi"><a class="nav" href="#kids">ბავშვები</a></li>
+            <li class="navi"><a class="nav" href="#fan-club">გულშემატკივართა კლუბი</a></li>
+            <li class="navi"><a class="nav" href="#contact-us">დაგვიკავშირდით</a></li>
           </ul>
         </nav>
         <div class="toggle-button" id="togglebutton">
@@ -154,7 +154,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 19:00</h5>
               <h5 class="info-text">"მეომარი არენა" ქ.ბათუმი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -171,7 +171,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 21:00</h5>
               <h5 class="info-text">"დინამო არენა" ქ.თბილისი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-1" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -184,7 +184,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 19:00</h5>
               <h5 class="info-text">"მცხეთის სტადიონი" ქ.მცხეთა</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-2" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -197,7 +197,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 21:00</h5>
               <h5 class="info-text">"მეფეების სტადიონი" ქ.ქუთაისი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-3" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -210,7 +210,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 19:00</h5>
               <h5 class="info-text">"მეომარი არენა" ქ.ბათუმი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-4" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -223,7 +223,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 15:00</h5>
               <h5 class="info-text">"ლომების სტადიონი" ქ.თელავი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-5" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -236,7 +236,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 19:00</h5>
               <h5 class="info-text">"მეომარი არენა" ქ.ბათუმი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-6" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -249,7 +249,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 21:00</h5>
               <h5 class="info-text">"მეომარი არენა" ქ.ბათუმი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-7" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -262,7 +262,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 19:00</h5>
               <h5 class="info-text">"მეკობრეების სტადიონი" ქ.ფოთი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-8" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -279,7 +279,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 21:00</h5>
               <h5 class="info-text">"მეომარი არენა" ქ.ბათუმი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-9" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -292,7 +292,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 19:00</h5>
               <h5 class="info-text">"მეომარი არენა" ქ.ბათუმი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-10" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -305,7 +305,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 21:00</h5>
               <h5 class="info-text">"მეომარი არენა" ქ.ბათუმი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-11" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -318,7 +318,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 19:00</h5>
               <h5 class="info-text">"მესტიის სტადიონი" ქ.მესტია</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-12" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -331,7 +331,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 17:00</h5>
               <h5 class="info-text">"მეომარი არენა" ქ.ბათუმი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-13" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -344,7 +344,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 19:00</h5>
               <h5 class="info-text">"ბულდოგების სტადიონი" ქ.გორი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-14" class="button" type="button">20₾</button>
             </div>
           </div>
           <div class="game-box">
@@ -357,7 +357,7 @@
             <div class="info">
               <h5 class="info-text">დრო: 19:00</h5>
               <h5 class="info-text">"ბორჯომი არენა" ქ.ბორჯომი</h5>
-              <button class="button" type="button">20₾</button>
+              <button id="purchase-15" class="button" type="button">20₾</button>
             </div>
           </div>
         </div>
@@ -492,7 +492,7 @@
               placeholder="ტექსტი"
               required
             ></textarea>
-            <button class="button-1" type="submit">წარგდენა</button>
+            <button id="submit" class="button-1" type="submit">წარგდენა</button>
           </div>
         </div>
       </div>

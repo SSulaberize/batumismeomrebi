@@ -36,14 +36,17 @@
     right: 20px;
     top: 110px;
   }
+  .navi{
+    padding: 3px 0px;
+  }
   .nav:hover {
-    padding: 2.5px;
+    padding: 3px;
   }
   .header{
     justify-content: space-between;
   }
   header{
-    height: 220px;
+    height: 250px;
   }
   .background-image {
     background-position: center;
@@ -104,7 +107,7 @@
     text-align: center;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 566px) {
   .background-text-container {
     left: 5px;
   }
@@ -143,12 +146,11 @@
     height: 1100px;
   }
   .high-nav{
-    top: 150px;
+    top: 165px;
     left: 10px;
     align-items: flex-start;
-    width: 200px;
-  }
-  .background-image{
+}
+.background-image{
     margin-top: 90px;
   }
   .logo{
@@ -156,6 +158,6 @@
     margin-left: 10px;
   }
   header{
-    height: 260px;
+    height: 305px;
   }
 }
