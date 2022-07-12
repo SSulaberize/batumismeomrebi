@@ -28,6 +28,17 @@
   .navigation.active{
     display: block;
   }
+  .toggle .bar2{
+    display: none;
+  }
+  .toggle .bar1{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .toggle .bar3{
+   top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg)
+  }
   .high-nav{
     position: absolute;
     display: flex;

@@ -118,10 +118,28 @@ footer {
 }
 .toggle-button{
   position: absolute;
-    top: 80px;
-    right: 150px;
-    color: var(--color1);
-    display: none;
+  color: var(--color1);
+  display: none;
+}
+.bar{
+  display: block;
+  position: absolute;
+  margin: 3px 0px;
+  width: 30px;
+  height: 5px;
+  background-color: var(--color1);
+}
+.bar1{
+  top: 0px;
+  right: 10px;
+}
+.bar2{
+  top: 10px;
+  right: 10px;
+}
+.bar3{
+  top: 20px;
+  right: 10px;
 }
 /* Section 1 */
 .background-image {
@@ -285,19 +303,8 @@ footer {
   max-width: 500px;
   width: 100%;
 }
-.kids{
-  text-align:left;
-  margin-top: 25px;
-}
-.triangle{
-  display: flex;
-  flex-flow: row wrap;
-}
-.duo{
-  display: flex;
-  flex-direction: column;
-}
 .children{
+  display: block;
   max-width: 500px;
   width: 100%;
 }

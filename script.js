@@ -1,8 +1,10 @@
 let navigationlinks = document. getElementById ('navigation-bar');
 let burgerbar = document. getElementById ('togglebutton');
 burgerbar.addEventListener ('click', function() {
+    burgerbar.classList.toggle('toggle');
     navigationlinks.classList.toggle('active');
 })
+
 document.getElementById('purchase').addEventListener('click', function() {
     alert('მადლობა ბილეთის შესყიდვისათვის')
 })
