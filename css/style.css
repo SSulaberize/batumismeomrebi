@@ -5,6 +5,8 @@
   --font1: 'BPG Nino Mtavruli';
   --font2: 'BPG Nino Mtavruli Bold';
   --font3: 'BPG Ingiri Arial';
+  --font4: 'Lato-Bold';
+  --font5: 'Lato-Regular';
 }
 /* colors */
 .main-color {
@@ -140,6 +142,9 @@ footer {
 .bar3{
   top: 20px;
   right: 10px;
+}
+.language{
+  width: 40px;
 }
 /* Section 1 */
 .background-image {
@@ -308,6 +313,9 @@ footer {
   max-width: 500px;
   width: 100%;
 }
+.kids{
+  margin-top: 20px;
+}
 /* Fans */
 .black-square {
   display: flex;
@@ -449,10 +457,10 @@ footer {
   color: var(--color2);
   padding: 5px;
   transition: all 0.5s linear;
-  border-radius: 25px;
 }
 .nav-2:hover {
   background-color: var(--color1);
+  color: var(--color3);
 }
 .bottom {
   max-width: 1268.8px;
@@ -478,4 +486,181 @@ footer {
 }
 .logo-1 {
   height: 100px;
+}
+
+/* ENGLISH */
+
+.nav-en {
+  font-family: var(--font4);
+  text-transform: uppercase;
+  color: var(--color1);
+  transition: all 0.5s linear;
+}
+.nav-en:hover {
+  color: var(--color2);
+  padding: 5px;
+  background-color: var(--color1);
+  border-radius: 25px;
+}
+.moto-en {
+  margin-bottom: 20px;
+  font-family: var(--font4);
+  text-transform: uppercase;
+}
+.h3-en{
+  font-family: var(--font4);
+  text-transform: uppercase;
+}
+.h3-1-en{
+  font-family: var(--font4);
+  text-transform: uppercase;
+}
+.h3-1-en::after {
+  content: "";
+  display: block;
+  height: 1px;
+  max-width: 210.08px;
+  width: 100%;
+  background-color: var(--color1);
+}
+.paragraph-en {
+  font-family: var(--font5);
+  margin-top: 25px;
+  color: var(--color1);
+  text-align: justify;
+}
+.paragraph-white-en {
+  font-family: var(--font5);
+  margin-top: 25px;
+  color: var(--color2);
+  text-align: justify;
+}
+.players-paragraph-en{
+  font-family: var(--font5);
+  color: var(--color1);
+  padding: 3px;
+}
+.h4-en{
+  text-transform: capitalize;
+  font-family: var(--font4);
+  font-size: 20px;
+}
+.h5-en{
+  text-transform: capitalize;
+  font-family: var(--font5);
+  font-size: 18px;
+}
+.p-en{
+  text-transform: capitalize;
+  font-family: var(--font5);
+}
+.h3-2-en{
+  font-family: var(--font4);
+  text-transform: uppercase;
+}
+.h3-2-en::after {
+  content: "";
+  display: block;
+  height: 1px;
+  max-width: 309.01px;
+  width: 100%;
+  background-color: var(--color1);
+}
+.date-en {
+  font-family: var(--font4);
+  margin-top: 15px;
+}
+.info-text-en {
+  font-family: var(--font5);
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.kids-en{
+  margin-top: 20px;
+  font-family: var(--font5);
+}
+.fan-header-en {
+  font-family: var(--font5);
+  margin: 15px 0px;
+  color: var(--color2);
+  font-size: 20px;
+}
+.location-en {
+  font-family: var(--font4);
+  text-transform: capitalize;
+  color: var(--color1);
+  margin: 15px 2px 15px 0px;
+}
+.area-en {
+  max-width: 600px;
+  width: 100%;
+  height: 40px;
+  font-family: var(--font5);
+  margin: 10px 0px;
+  border-color: var(--color1);
+}
+.area-en::placeholder {
+  text-transform: capitalize;
+  font-family: var(--font4);
+  color: var(--color1);
+}
+.area-en:focus{
+  outline: none;
+}
+.text-area-en {
+  max-width: 600px;
+  width: 100%;   
+  height: 165px;
+  color: #000;
+  font-family: var(--font4);
+  resize: none;
+  border-color: var(--color1);
+}
+.text-area-en::placeholder {
+  text-transform: capitalize;
+  font-family: var(--font5);
+  color: var(--color1);
+}
+.text-area-en:focus{
+  outline: none;
+}
+.button-1-en {
+  height: 40px;
+  max-width:600px;
+  width: 100%;
+  background-color: var(--color1);
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: var(--font4);
+  text-transform: uppercase;
+  color: var(--color2);
+  transition: all 0.5s linear;
+}
+.button-1-en:hover {
+  background-color: red;
+  color: var(--color3);
+}
+.nav-2-en {
+  font-family: var(--font4);
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--color2);
+  transition: all 0.5s linear;
+}
+.nav-2-en:hover {
+  background-color: var(--color1);
+  color: var(--color3);
+}
+.padding{
+  padding: 5px;
+}
+.bottom-en {
+  font-family: var(--font5);
+  max-width: 1268.8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font3);
+  color: #888888;
+  margin-top: 100px;
 }
