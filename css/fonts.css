@@ -1,51 +1,82 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+/* <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p> */
+
 @font-face {
-    font-family: 'BPG Nino Mtavruli';
-    src: url('../fonts/bpg-nino-mtavruli-webfont.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/bpg-nino-mtavruli-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/bpg-nino-mtavruli-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/bpg-nino-mtavruli-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/bpg-nino-mtavruli-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/bpg-nino-mtavruli-webfont.svg#bpg_nino_mtavruliregular') format('svg'); /* Legacy iOS */
+  font-family: "BPG Nino Mtavruli";
+  src: url("../fonts/bpg-nino-mtavruli-webfont.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bpg-nino-mtavruli-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/bpg-nino-mtavruli-webfont.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/bpg-nino-mtavruli-webfont.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/bpg-nino-mtavruli-webfont.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/bpg-nino-mtavruli-webfont.svg#bpg_nino_mtavruliregular")
+      format("svg"); /* Legacy iOS */
 }
 @font-face {
-    font-family: 'BPG Nino Mtavruli Bold';
-    src: url('../fonts/bpg-nino-mtavruli-bold-webfont.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/bpg-nino-mtavruli-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/bpg-nino-mtavruli-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/bpg-nino-mtavruli-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/bpg-nino-mtavruli-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/bpg-nino-mtavruli-bold-webfont.svg#bpg_nino_mtavrulibold') format('svg'); /* Legacy iOS */
+  font-family: "BPG Nino Mtavruli Bold";
+  src: url("../fonts/bpg-nino-mtavruli-bold-webfont.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bpg-nino-mtavruli-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/bpg-nino-mtavruli-bold-webfont.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/bpg-nino-mtavruli-bold-webfont.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("../fonts/bpg-nino-mtavruli-bold-webfont.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/bpg-nino-mtavruli-bold-webfont.svg#bpg_nino_mtavrulibold")
+      format("svg"); /* Legacy iOS */
 }
 @font-face {
-    font-family: 'BPG Ingiri Arial';
-    src: url('../fonts/bpg-ingiri-arial-webfont.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/bpg-ingiri-arial-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/bpg-ingiri-arial-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/bpg-ingiri-arial-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/bpg-ingiri-arial-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/bpg-ingiri-arial-webfont.svg#bpg_ingiri_arialregular') format('svg'); /* Legacy iOS */
+  font-family: "BPG Ingiri Arial";
+  src: url("../fonts/bpg-ingiri-arial-webfont.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bpg-ingiri-arial-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/bpg-ingiri-arial-webfont.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/bpg-ingiri-arial-webfont.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/bpg-ingiri-arial-webfont.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/bpg-ingiri-arial-webfont.svg#bpg_ingiri_arialregular")
+      format("svg"); /* Legacy iOS */
 }
 @font-face {
-    font-family: 'Lato-Bold';
-    src: url('../fonts/Lato-Bold.eot');
-    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Lato-Bold.woff2') format('woff2'),
-        url('../fonts/Lato-Bold.woff') format('woff'),
-        url('../fonts/Lato-Bold.ttf') format('truetype'),
-        url('../fonts/Lato-Bold.svg#Lato-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato-Bold.eot");
+  src: url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Lato-Bold.woff2") format("woff2"),
+    url("../fonts/Lato-Bold.woff") format("woff"),
+    url("../fonts/Lato-Bold.ttf") format("truetype"),
+    url("../fonts/Lato-Bold.svg#Lato-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-    font-family: 'Lato-Regular';
-    src: url('../fonts/Lato-Regular.eot');
-    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Lato-Regular.woff2') format('woff2'),
-        url('../fonts/Lato-Regular.woff') format('woff'),
-        url('../fonts/Lato-Regular.ttf') format('truetype'),
-        url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato-Regular.eot");
+  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/Lato-Regular.woff") format("woff"),
+    url("../fonts/Lato-Regular.ttf") format("truetype"),
+    url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
