@@ -53,7 +53,3 @@ document.getElementById('purchase-14').addEventListener('click', function() {
 document.getElementById('purchase-15').addEventListener('click', function() {
     alert('მადლობა ბილეთის შესყიდვისათვის. Thank you for purchasing ticket.')
 })
-
-document.getElementById('submit').addEventListener('click', function() {
-    alert ('თქვენი წერილი მიღებულია, მალე განვიხილავთ და გიპასხუხებთ. Your letter has been received, soon we will review it and answer you.')
-})

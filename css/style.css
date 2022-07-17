@@ -11,6 +11,7 @@
             alt="Valid CSS!" />
     </a>
 </p> */
+       
 
 :root {
   --color1: #5e17eb;
@@ -53,6 +54,9 @@
   color: var(--color2);
 }
 /* Main elements */
+*{
+  scroll-behavior: smooth;
+}
 header {
   position: fixed;
   height: 180px;
