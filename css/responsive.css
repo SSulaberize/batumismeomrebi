@@ -4,7 +4,6 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-
 /* <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -12,6 +11,7 @@
             alt="Valid CSS!" />
     </a>
 </p> */
+            
 
 @media (max-width: 1220px) {
   .image-blocks {
