@@ -201,6 +201,12 @@ footer {
 .moto {
   margin-bottom: 20px;
 }
+.video{
+  margin-top: 20px;
+}
+/* .music{
+  opacity: 10%;
+} */
 /* Team */
 .section-2 {
   display: -webkit-box;
@@ -275,6 +281,7 @@ footer {
   padding: 3px;
 }
 .players {
+  object-fit: cover;
   height: 270px;
   max-width: 300px;
   width: 100%;
@@ -418,6 +425,7 @@ footer {
   width: 100%;
 }
 .children {
+  object-fit: cover;
   display: block;
   max-width: 500px;
   width: 100%;
@@ -475,6 +483,7 @@ footer {
   width: 100%;
 }
 .fans {
+  object-fit: cover;
   width: 400px;
 }
 /* Contact */
@@ -636,6 +645,7 @@ footer {
   color: var(--color3);
 }
 .picture {
+  object-fit: cover;
   max-width: 600px;
   width: 100%;
 }
@@ -670,6 +680,14 @@ footer {
   justify-content: space-between;
   max-width: 800px;
   width: 100%;
+}
+.low-nav-left{
+  display: flex;
+  flex-direction: column;
+}
+.low-nav-right{
+  display: flex;
+  flex-direction: column;
 }
 .nav-2 {
   font-family: var(--font2);
@@ -716,10 +734,12 @@ footer {
   width: 100%;
 }
 .logo {
+  object-fit: cover;
   max-width: 200px;
   width: 100%;
 }
 .logo-1 {
+  object-fit: cover;
   height: 100px;
 }
 
