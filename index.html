@@ -40,7 +40,7 @@
   </head>
   <body>
     <header>
-      <div class="header">
+      <div class="header" id="headerSection">
         <a href="index.html"
           ><img class="logo" src="images/logo.svg" alt="Logo"
         /></a>
@@ -73,7 +73,7 @@
       </div>
     </header>
     <section id="main">
-      <div class="background-image">
+      <div class="background-image" id="image">
         <div class="background-text-container">
           <h2 class="main-color moto">
             უფრო მეტი ვიდრე გუნდი, უფრო მეტი ვიდრე თამაში.
@@ -82,6 +82,11 @@
             ქალაქ ბათუმის ყინულის ჰოკეის გუნდი "ბათუმის მეომრები"
           </h3>
         </div>
+      </div>
+      <div class="slider">
+        <button class="left-arrow" id="leftArrow"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="right-arrow" id="rightArrow"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="slider-content" id="sliderContent"></div>
       </div>
       <div>
         <video
@@ -427,7 +432,7 @@
               ჯანმრთელ ცხოვრებას და ჩამოყალიბდებიან პიროვნებებად.
             </p>
           </div>
-          <img class="children" src="images/children.jpg" alt="Children" />
+         
         </div>
       </div>
     </section>
@@ -519,30 +524,33 @@
             />
           </div>
           <div>
-            <form action="#">
+            <form action="" id="contactform" method="POST">
               <input
                 class="area"
                 type="text"
-                name="subject"
-                id="subject"
-                placeholder="სათაური"
-                required
-              />
+                name="username"
+                id="username"
+                placeholder="მომხმარებლის სახელი"
+                />
+              <div class="errortext" id="error-username"></div>
               <input
                 class="area"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="ელ-ფოსტა"
-                required
-              />
+                />
+              <div class="errortext" id="mail"></div>
               <textarea
                 class="text-area"
                 name="textarea"
                 id="text"
                 placeholder="ტექსტი"
-                required
-              ></textarea>
+                ></textarea>
+                <div class="errortext" id="error-textarea"></div>
+              <input type="checkbox" name="conditions" id="terms">
+              <label for="terms" class="conditions">ვეთანხმები კომუნიკაციის წესებს.</label>
+              <div class="errortext" id="error-conditions"></div>
               <button class="button-1" type="submit">წარგდენა</button>
             </form>
           </div>
@@ -591,6 +599,9 @@
         >2022 წელი. შექმნილია Sula Solutions-ის მიერ. ყველა უფლება
         დაცულია.</span
       >
+         <button class="lift" id="goToTop">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
     </footer>
     <script src="script.js"></script>
   </body>

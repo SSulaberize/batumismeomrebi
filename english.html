@@ -37,7 +37,7 @@
   </head>
   <body>
     <header>
-      <div class="header">
+      <div class="header" id="headerSection">
         <a href="english.html"
           ><img class="logo" src="images/logo.svg" alt="Logo"
         /></a>
@@ -70,7 +70,7 @@
       </div>
     </header>
     <section id="main">
-      <div class="background-image">
+      <div class="background-image" id="image">
         <div class="background-text-container">
           <h2 class="main-color moto-en">
             much more than a team, much more than a game.
@@ -413,7 +413,7 @@
     <section id="kids">
       <div class="white-square">
         <div class="block">
-          <div class="text-block">
+          <div class="text-block-en">
             <h3 class="h3-1-en">kids and youth</h3>
             <p class="kids-en">
               "Batumi Warriors" care about the future and continuity of club's
@@ -513,30 +513,33 @@
             />
           </div>
           <div>
-            <form action="#">
+            <form action="" id="contactform" method="POST">
               <input
                 class="area-en"
                 type="text"
-                name="subject"
-                id="subject"
-                placeholder="title"
-                required
+                name="username"
+                id="username"
+                placeholder="Username"
               />
+              <div class="errortext" id="error-username"></div>
               <input
                 class="area-en"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="e-mail"
-                required
               />
+              <div class="errortext" id="mail"></div>
               <textarea
                 class="text-area-en"
                 name="textarea"
                 id="text"
                 placeholder="text"
-                required
               ></textarea>
+              <div class="errortext" id="error-textarea"></div>
+              <input type="checkbox" name="conditions" id="terms">
+              <label for="terms" class="conditions">I agree with rules of communications.</label>
+              <div class="errortext" id="error-conditions"></div>
               <button class="button-1-en" type="submit">submit</button>
             </form>
           </div>
@@ -585,6 +588,9 @@
       <span class="bottom-en"
         >2022 year. Created by "Sula Solutions". All rights reserved.</span
       >
+      <button class="lift" id="goToTop">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
     </footer>
     <script src="script.js"></script>
   </body>

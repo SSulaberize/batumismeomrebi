@@ -11,8 +11,13 @@
             alt="Valid CSS!" />
     </a>
 </p> */
-            
 
+@media (max-width: 1286px){
+  .lift {
+    bottom: 10px;
+    right: 10px;
+  }
+}
 @media (max-width: 1220px) {
   .image-blocks {
     -ms-grid-columns: 1fr;
@@ -47,35 +52,30 @@
   .navigation.active {
     display: block;
   }
+  .toggle .bar {
+    margin-top: 10px;
+  }
   .toggle .bar2 {
     display: none;
   }
   .toggle .bar1 {
     top: 50%;
-    -webkit-transform: translate(-50%, -50%) rotate(45deg);
-    -ms-transform: translate(-50%, -50%) rotate(45deg);
     transform: translate(-50%, -50%) rotate(45deg);
   }
   .toggle .bar3 {
     top: 50%;
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-    -ms-transform: translate(-50%, -50%) rotate(-45deg);
     transform: translate(-50%, -50%) rotate(-45deg);
   }
   .high-nav {
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    right: 70px;
-    top: 110px;
+    align-items: center;
+    right: 0px;
+    top: 170px;
+    width: 100%;
+    height: 180px;
+    background-color: orange;
   }
   .navi {
     padding: 3px 0px;
@@ -83,16 +83,13 @@
   .nav:hover {
     padding: 3px;
   }
+  .activation.background-image {
+    margin-top: 170px;
+  }
   .header {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-  }
-  header {
-    height: 250px;
-  }
-  .logo {
-    margin-bottom: 15px;
   }
 }
 @media (max-width: 1169px) {
@@ -206,16 +203,6 @@
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-  }
-  .background-image {
-    margin-top: 90px;
-  }
-  .logo {
-    width: 130px;
-    margin-left: 10px;
-  }
-  header {
-    height: 305px;
   }
 }
 @media (max-width: 370px) {

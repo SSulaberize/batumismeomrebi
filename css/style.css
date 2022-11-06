@@ -162,7 +162,6 @@ footer {
 .bar {
   display: block;
   position: absolute;
-  margin: 3px 0px;
   width: 30px;
   height: 5px;
   background-color: var(--color1);
@@ -180,6 +179,7 @@ footer {
   right: 10px;
 }
 .language {
+  margin-top: 5px;
   width: 40px;
 }
 /* Section 1 */
@@ -187,7 +187,8 @@ footer {
   position: relative;
   background-image: url("../images/1.jpg");
   background-size: cover;
-  height: 950px;
+  background-position: center;
+  height: 530px;
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -195,8 +196,8 @@ footer {
   position: absolute;
   max-width: 450px;
   width: 100%;
-  top: 300px;
-  left: 100px;
+  top: 150px;
+  left: 150px;
 }
 .moto {
   margin-bottom: 20px;
@@ -388,59 +389,38 @@ footer {
 }
 /* Child team */
 .white-square {
-  width: 100%;
   height: 500px;
 }
 .block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
   margin-top: 100px;
 }
 .text-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  max-width: 500px;
+  max-width: 1030px;
   width: 100%;
 }
 .children {
   object-fit: cover;
   display: block;
-  max-width: 500px;
-  width: 100%;
+  width: 480px;
+  margin-top: 10px;
 }
 .kids {
+  text-align: justify;
   margin-top: 20px;
 }
+
 /* Fans */
 .black-square {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: var(--color3);
   height: 700px;
@@ -600,6 +580,7 @@ footer {
   font-family: var(--font3);
   resize: none;
   border-color: var(--color1);
+  margin: 10px 0px;
 }
 .text-area::-webkit-input-placeholder {
   font-family: var(--font2);
@@ -645,6 +626,7 @@ footer {
   object-fit: cover;
   max-width: 600px;
   width: 100%;
+  height: 375px;
 }
 .map {
   max-width: 600px;
@@ -738,6 +720,21 @@ footer {
 .logo-1 {
   object-fit: cover;
   height: 100px;
+}
+.lift{
+  height: 30px;
+  width: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: var(--color1);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s linear;
+  opacity: 0.6;
+}
+.lift:hover{
+  opacity: 1;
 }
 
 /* ENGLISH */
@@ -907,6 +904,7 @@ footer {
   max-width: 600px;
   width: 100%;
   height: 165px;
+  margin: 10px 0px;
   color: #000;
   font-family: var(--font4);
   resize: none;
@@ -987,4 +985,83 @@ footer {
   font-family: var(--font3);
   color: #888888;
   margin-top: 100px;
+}
+.text-block-en {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.slider {
+  position: relative;
+}
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: var(--color1);
+  cursor: pointer;
+  opacity: 0.5;
+}
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: var(--color1);
+  cursor: pointer;
+  opacity: 0.5;
+}
+.fa-chevron-right {
+  color: white;
+}
+.fa-chevron-left {
+  color: white;
+}
+.imageslide{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.dot-wrapper{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 15px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.dot.activeDot{
+  background-color: var(--color1);
+}
+.errortext{
+  display: block;
+  color: red;
+}
+.conditions{
+  color: var(--color1);
+  font-family: var(--font2);
 }
