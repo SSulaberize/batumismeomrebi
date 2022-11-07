@@ -69,8 +69,116 @@ mail.innerText = 'ელ-ფოსტა არა სწორია.';
 mail.style.color = 'red';
 }
 
-
 });
+
+let group = [
+    {
+        id: 1,
+        imagePlacement: 'images/1.jpg',
+
+    },
+    {
+        id: 2,
+        imagePlacement: 'images/ice-hockey-player-at-rink.jpg',
+
+    },
+    {
+        id: 3,
+        imagePlacement: 'images/one-hockey-player-on-ice.jpg',
+
+    },
+    {
+        id: 4,
+        imagePlacement: 'images/hockey-match-at-rink.jpg',
+    },
+];
+
+let chevronLeft = document.getElementById('leftChevron');
+let chevronRight = document.getElementById('rightChevron');
+let contentSlider = document.getElementById('sliderContent');
+let dotsElement = document.getElementsByClassName('dot');
+let indexSlider = 0;
+
+function divTagCreate(item) {
+ let divTag = document.createElement('div');
+ divTag.classList.add('slide');
+
+ return divTag;
+}
+
+function imageTagCreate(item) {
+    let imageTag = document.createElement('img');
+    imageTag.setAttribute('src', item.imagePlacement);
+    imageTag.classList.add('imageslide');
+
+    return imageTag;
+}
+
+function createDots(){
+    let dots = document.createElement('div');
+    dots.classList.add('dot-wrapper');
+
+   group.forEach(element => {
+        let dotElement = document.createElement('div');
+        dotElement.classList.add('dot');
+       dotElement.setAttribute('group-id', element.id - 1);
+        dots.appendChild(dotElement);
+
+        dotElement.addEventListener('click', function(event) {
+            let id = event.target.getAttribute('group-id');
+            indexSlider = id;
+            getSlide();
+        })
+    })
+    return dots;
+}
+
+function getSlide() {
+    contentSlider.innerHTML = ' ';
+    let sliderItem = divTagCreate(group[indexSlider]);
+    let tagImage = imageTagCreate(group[indexSlider]);
+    let dots = createDots();
+
+    sliderItem.appendChild(tagImage);
+    contentSlider.appendChild(sliderItem);
+   contentSlider.appendChild(dots);
+
+   currentActiveDot();
+}
+
+function currentActiveDot() {
+    dotsElement[indexSlider].classList.add('activeDot');
+}
+
+function leftChevronClick() {
+    if (indexSlider == 0) {
+        indexSlider = group.length-1;
+        getSlide();
+        return;
+    }
+    indexSlider -=1;
+    getSlide();
+}
+
+function rightChevronClick(){
+    if (indexSlider == group.length-1){
+        indexSlider = 0;
+        getSlide();
+        return;
+    }
+    indexSlider +=1;
+    getSlide();
+}
+
+chevronLeft.addEventListener('click', leftChevronClick);
+chevronRight.addEventListener('click', rightChevronClick);
+
+setInterval(() => {
+    rightChevronClick();
+}, 6000);
+
+getSlide();
+
 
 document.getElementById('purchase').addEventListener('click', function () {
     alert('მადლობა ბილეთის შესყიდვისათვის. Thank you for purchasing ticket.')

@@ -997,7 +997,7 @@ footer {
 .slider {
   position: relative;
 }
-.left-arrow {
+.left-chevron {
   position: absolute;
   top: 50%;
   left: 40px;
@@ -1011,8 +1011,12 @@ footer {
   background-color: var(--color1);
   cursor: pointer;
   opacity: 0.5;
+  transition: linear 0.5s;
 }
-.right-arrow {
+.left-chevron:hover{
+  opacity: 1;
+}
+.right-chevron {
   position: absolute;
   top: 50%;
   right: 40px;
@@ -1026,12 +1030,18 @@ footer {
   background-color: var(--color1);
   cursor: pointer;
   opacity: 0.5;
+  transition: linear 0.5s;
+}
+.right-chevron:hover{
+  opacity: 1;
 }
 .fa-chevron-right {
   color: white;
+  opacity: 0.5;
 }
 .fa-chevron-left {
   color: white;
+  opacity: 0.5;
 }
 .imageslide{
     width: 100%;
@@ -1051,8 +1061,12 @@ footer {
     border-radius: 50%;
     background-color: white;
     margin: 15px;
-    opacity: 0.3;
+    opacity: 0.5;
     cursor: pointer;
+    transition: linear 0.5s;
+}
+.dot:hover{
+opacity: 1;
 }
 .dot.activeDot{
   background-color: var(--color1);
