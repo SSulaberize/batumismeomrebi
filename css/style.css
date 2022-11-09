@@ -84,6 +84,10 @@ h3 {
   width: 100%;
   background-color: var(--color1);
 }
+.h3-1{
+  font-family: var(--font2);
+  font-size: 25px;
+}
 .h3-1::after {
   content: "";
   display: block;
@@ -92,6 +96,7 @@ h3 {
   width: 100%;
   background-color: var(--color1);
 }
+
 h4 {
   font-family: var(--font2);
   font-size: 20px;
@@ -404,6 +409,9 @@ footer {
   max-width: 1030px;
   width: 100%;
 }
+.text-block.active .kids {
+  height: 50px;
+}
 .children {
   object-fit: cover;
   display: block;
@@ -411,8 +419,29 @@ footer {
   margin-top: 10px;
 }
 .kids {
+  height: 0;
   text-align: justify;
   margin-top: 20px;
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+.kids-header{
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-minus{
+  display: none;
+}
+
+.fa-minus.toggle {
+  display: block;
+}
+
+.fa-plus.metamorphose {
+  display: none;
 }
 
 /* Fans */
@@ -826,10 +855,7 @@ footer {
   text-transform: capitalize;
   margin-top: 10px;
 }
-.kids-en {
-  margin-top: 20px;
-  font-family: var(--font5);
-}
+
 .fan-header-en {
   font-family: var(--font5);
   margin: 15px 0px;
@@ -985,6 +1011,16 @@ footer {
   font-family: var(--font3);
   color: #888888;
   margin-top: 100px;
+}
+.kids-en {
+  height: 0;
+  margin-top: 20px;
+  font-family: var(--font5);
+  overflow: hidden;
+  transition: 0.6s;
+}
+.text-block-en.active .kids-en {
+  height: 50px;
 }
 .text-block-en {
   display: flex;

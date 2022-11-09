@@ -179,6 +179,30 @@ setInterval(() => {
 
 getSlide();
 
+let accordion = document.querySelectorAll('.text-block');
+let minus = document.getElementById('minus');
+let plus = document.getElementById('plus')
+for (let element of accordion) {
+    element.addEventListener('click', function(){
+        this.classList.toggle('active');
+        minus.classList.toggle('toggle');
+        plus.classList.toggle('metamorphose')
+
+    })
+}
+
+let accordionen = document.querySelectorAll('.text-block-en');
+let minusen = document.getElementById('minus');
+let plusen = document.getElementById('plus')
+for (let element of accordionen) {
+    element.addEventListener('click', function(){
+        this.classList.toggle('active');
+        minus.classList.toggle('toggle');
+        plus.classList.toggle('metamorphose')
+
+    })
+}
+
 
 document.getElementById('purchase').addEventListener('click', function () {
     alert('მადლობა ბილეთის შესყიდვისათვის. Thank you for purchasing ticket.')
