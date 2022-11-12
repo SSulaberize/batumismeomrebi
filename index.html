@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="icon" href="images/logo.svg" />
+    <script defer src="script.js"></script>
     <title>ბათუმის მეომრები</title>
   </head>
   <body>
@@ -73,7 +74,7 @@
       </div>
     </header>
     <section id="main">
-      <div class="slider">
+      <div class="slider" id>
         <button class="left-chevron" id="leftChevron"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="right-chevron" id="rightChevron"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="slidercontent" id="sliderContent"></div>
@@ -411,8 +412,7 @@
     <section id="kids">
       <div class="white-square">
         <div class="block">
-          
-          <div class="text-block">
+           <div class="text-block">
             <div class="kids-header">
               <h3 class="h3-1">ბავშვები და ყმაწვილები</h3>
               <i class="fa-solid fa-plus" id="plus"></i>
@@ -426,8 +426,12 @@
               აქ ისინი ისწავლიან გუნდურობას, წინაამღდეგობების გადალახვას,
               ჯანმრთელ ცხოვრებას და ჩამოყალიბდებიან პიროვნებებად.
             </p>
+            <div class="photos">
+              <img class="children" src="images/kids.jpg" alt="Kids">
+              <img class="children" src="images/children.jpg" alt="Children" />
+              <img class="children" src="images/boys.jpg" alt="Boys">
+            </div>
           </div>
-         
         </div>
       </div>
     </section>
@@ -597,8 +601,7 @@
          <button class="lift" id="goToTop">
         <i class="fa-solid fa-chevron-up"></i>
       </button>
-      <div id="api"></div>
+      <div class="api" id="api"></div>
       </footer>
-    <script src="script.js"></script>
   </body>
 </html>

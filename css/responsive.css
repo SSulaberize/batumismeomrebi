@@ -18,6 +18,7 @@
     right: 10px;
   }
 }
+
 @media (max-width: 1220px) {
   .image-blocks {
     -ms-grid-columns: 1fr;
@@ -38,6 +39,15 @@
   }
   .black-square {
     height: 1200px;
+  }
+  .photos{
+    width: 51%;
+  }
+  .children {
+    margin-bottom: 10px;
+  }
+  .white-square {
+    height: 1000px;
   }
 }
 @media (max-width: 1207px) {
@@ -91,6 +101,9 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+  .movement.slider {
+    margin-top: 10px;
+  }
 }
 @media (max-width: 1169px) {
   .background-image {
@@ -142,9 +155,7 @@
   .children {
     margin-top: 10px;
   }
-  .white-square {
-    height: 550px;
-  }
+
 }
 @media (max-width: 650px) {
   .grid {

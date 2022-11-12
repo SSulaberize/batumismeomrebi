@@ -184,8 +184,9 @@ footer {
   right: 10px;
 }
 .language {
-  margin-top: 5px;
+  margin: 5px 10px 0px 0px;
   width: 40px;
+
 }
 /* Section 1 */
 .background-image {
@@ -406,17 +407,20 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1030px;
+  max-width: 1400px;
   width: 100%;
 }
 .text-block.active .kids {
-  height: 50px;
+  height: 60px;
 }
+
+.text-block.active .photos {
+  margin-top: 10px;
+}
+
 .children {
   object-fit: cover;
-  display: block;
-  width: 480px;
-  margin-top: 10px;
+  width: 400px;
 }
 .kids {
   height: 0;
@@ -427,7 +431,8 @@ footer {
 }
 
 .kids-header{
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -442,6 +447,13 @@ footer {
 
 .fa-plus.metamorphose {
   display: none;
+}
+
+.photos{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 /* Fans */
@@ -1114,4 +1126,10 @@ opacity: 1;
 .conditions{
   color: var(--color1);
   font-family: var(--font2);
+}
+
+.api {
+  max-width: 700px;
+  width: 100%;
+  margin: 50px;
 }

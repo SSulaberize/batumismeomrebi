@@ -203,6 +203,45 @@ for (let element of accordionen) {
     })
 }
 
+fetch ('https://jsonplaceholder.typicode.com/albums', {
+    method: 'GET'
+})
+
+.then(function(response){
+    if (response.status !== 200){
+        throw response.status
+    }
+
+return response.json();
+})
+
+.then(function(responseData){
+    let ul = document.createElement ('ul');
+    const fragment = document.createDocumentFragment();
+    responseData.forEach((element) => {
+        let li = document.createElement ('li');
+         li.innerText = `${element.id} ${element.title} `;
+         fragment.appendChild(li);
+        });
+    
+    ul.appendChild(fragment);
+    document.getElementById('api').appendChild(ul);
+})
+
+.catch(function(error){
+    if (error == 404) {
+        let p = document.createElement('p');
+        p.innerText = 'Page not found';
+        p.style.color = 'red';
+        document.getElementById('api').appendChild(p);
+    }
+ else if (error == 500){
+    let p = document.createElement('p');
+    p.innerText = 'Server Error';
+    p.style.color = 'red';
+    document.getElementById('api').appendChild(p);
+ }
+})
 
 document.getElementById('purchase').addEventListener('click', function () {
     alert('მადლობა ბილეთის შესყიდვისათვის. Thank you for purchasing ticket.')
