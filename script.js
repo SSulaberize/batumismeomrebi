@@ -1,11 +1,14 @@
+// Burger Bar & Drop Down Menu
 let navigationlinks = document.getElementById('navigation-bar');
 let burgerbar = document.getElementById('togglebutton');
-let picture = document.getElementById('image');
+let picture = document.getElementById('slider');
 burgerbar.addEventListener('click', function () {
     burgerbar.classList.toggle('toggle');
     navigationlinks.classList.toggle('active');
     picture.classList.toggle('activation');
 });
+
+// Scroll to Top
 
 let liftbutton = document.getElementById('goToTop');
 liftbutton.addEventListener('click', function () {
@@ -14,6 +17,8 @@ liftbutton.addEventListener('click', function () {
         behavior: "smooth"
     })
 });
+
+// Validation
 
 let contact = document.getElementById('contactform');
 contact.addEventListener('submit', function(event){
@@ -70,6 +75,8 @@ mail.style.color = 'red';
 }
 
 });
+
+// Slider
 
 let group = [
     {
@@ -179,6 +186,8 @@ setInterval(() => {
 
 getSlide();
 
+// Accordion
+
 let accordion = document.querySelectorAll('.text-block');
 let minus = document.getElementById('minus');
 let plus = document.getElementById('plus')
@@ -203,45 +212,72 @@ for (let element of accordionen) {
     })
 }
 
-fetch ('https://jsonplaceholder.typicode.com/albums', {
-    method: 'GET'
-})
+// FILTER
 
-.then(function(response){
-    if (response.status !== 200){
-        throw response.status
-    }
+let resultat = document.getElementById('resultat');
+let filter = document.getElementById('filter');
+let itemsList = [];
 
+function filterUsers() {
+    fetch('https://jsonplaceholder.typicode.com/albums',{
+        method: 'GET',
+    })
+    .then(response => {
 return response.json();
-})
-
-.then(function(responseData){
-    let ul = document.createElement ('ul');
-    const fragment = document.createDocumentFragment();
-    responseData.forEach((element) => {
-        let li = document.createElement ('li');
-         li.innerText = `${element.id} ${element.title} `;
-         fragment.appendChild(li);
+    })
+    .then(dataReceive=>{
+        dataReceive.forEach(element => {
+            let li = document.createElement('li');
+            li.innerHTML = `${element.id} ${element.title}`;
+            itemsList.push(li);
+            resultat.appendChild(li);
         });
-    
-    ul.appendChild(fragment);
-    document.getElementById('api').appendChild(ul);
+    })
+    .catch(error =>{
+        console.log(error);
+    })
+}
+
+filterUsers();
+
+function dataFilter(itemSearch) {
+    itemsList.forEach(item => {
+        if (item.innerText.toLowerCase().includes(itemSearch.toLowerCase())){
+        item.classList.remove('hide');
+       } else {
+        item.classList.add('hide');
+       }
+    })
+}
+
+filter.addEventListener('keyup', function(event) {
+    dataFilter(event.target.value);
+
 })
 
-.catch(function(error){
-    if (error == 404) {
-        let p = document.createElement('p');
-        p.innerText = 'Page not found';
-        p.style.color = 'red';
-        document.getElementById('api').appendChild(p);
+// Cookies
+
+document.getElementById('contactform').addEventListener('submit', function(event){
+    event.preventDefault();
+
+    let checkbox = document.getElementById('terms');
+    if (checkbox.checked) {
+        let valueUsername = document.getElementById('username').value;
+        Cookies.set('cookiesusernameSave', valueUsername);
+    } else {
+        Cookies.remove('cookiesusernameSave');
     }
- else if (error == 500){
-    let p = document.createElement('p');
-    p.innerText = 'Server Error';
-    p.style.color = 'red';
-    document.getElementById('api').appendChild(p);
- }
-})
+});
+
+let usernameSaved = Cookies.get('cookiesusernameSave');
+
+if (usernameSaved) {
+    document.getElementById('username').value = usernameSaved;
+    document.getElementById('terms').checked = true;
+
+}
+
+// Alert
 
 document.getElementById('purchase').addEventListener('click', function () {
     alert('მადლობა ბილეთის შესყიდვისათვის. Thank you for purchasing ticket.')

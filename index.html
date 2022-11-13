@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="icon" href="images/logo.svg" />
+    <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script defer src="script.js"></script>
     <title>ბათუმის მეომრები</title>
   </head>
@@ -74,14 +75,13 @@
       </div>
     </header>
     <section id="main">
-      <div class="slider" id>
+      <div class="slider" id="slider">
         <button class="left-chevron" id="leftChevron"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="right-chevron" id="rightChevron"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="slidercontent" id="sliderContent"></div>
       </div>
       <div>
         <video
-          width="100%"
           class="video"
           preload="auto"
           autoplay="autoplay"
@@ -191,7 +191,7 @@
         </div>
         <div class="games">
           <div class="game-box">
-            <h4 class="date">15.09.2022</h4>
+            <h4 class="date">15.02.2023</h4>
             <div class="teams">
               <img src="images/logo-small.svg" alt="Logo Small" />
               <div class="line"></div>
@@ -204,7 +204,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">19.09.2022</h4>
+            <h4 class="date">19.02.2023</h4>
             <div class="teams">
               <img
                 class="image"
@@ -221,7 +221,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">23.09.2022</h4>
+            <h4 class="date">23.02.2023</h4>
             <div class="teams">
               <img class="image-1" src="images/wolfs.png" alt="Wolfs" />
               <div class="line"></div>
@@ -234,7 +234,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">27.09.2022</h4>
+            <h4 class="date">27.02.2023</h4>
             <div class="teams">
               <img class="image" src="images/kings.png" alt="Kings" />
               <div class="line"></div>
@@ -247,7 +247,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">01.10.2022</h4>
+            <h4 class="date">01.03.2023</h4>
             <div class="teams">
               <img src="images/logo-small.svg" alt="Logo Small" />
               <div class="line"></div>
@@ -260,7 +260,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">05.10.2022</h4>
+            <h4 class="date">05.03.2023</h4>
             <div class="teams">
               <img class="image-1" src="images/lions.png" alt="Lions" />
               <div class="line"></div>
@@ -273,7 +273,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">09.10.2022</h4>
+            <h4 class="date">09.03.2023</h4>
             <div class="teams">
               <img src="images/logo-small.svg" alt="Logo Small" />
               <div class="line"></div>
@@ -286,7 +286,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">13.10.2022</h4>
+            <h4 class="date">13.03.2023</h4>
             <div class="teams">
               <img src="images/logo-small.svg" alt="Logo Small" />
               <div class="line"></div>
@@ -299,7 +299,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">15.11.2022</h4>
+            <h4 class="date">15.03.2023</h4>
             <div class="teams">
               <img class="image" src="images/pirates.png" alt="Poti Pirates" />
               <div class="line"></div>
@@ -312,7 +312,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">19.11.2022</h4>
+            <h4 class="date">19.03.2023</h4>
             <div class="teams">
               <img src="images/logo-small.svg" alt="Logo Small" />
               <div class="line"></div>
@@ -329,7 +329,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">23.11.2022</h4>
+            <h4 class="date">23.03.2023</h4>
             <div class="teams">
               <img src="images/logo-small.svg" alt="Logo Small" />
               <div class="line"></div>
@@ -342,7 +342,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">27.11.2022</h4>
+            <h4 class="date">27.03.2023</h4>
             <div class="teams">
               <img src="images/logo-small.svg" alt="Logo Small" />
               <div class="line"></div>
@@ -355,7 +355,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">01.12.2022</h4>
+            <h4 class="date">01.04.2023</h4>
             <div class="teams">
               <img class="image-1" src="images/icemen.png" alt="Snow Men" />
               <div class="line"></div>
@@ -368,7 +368,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">05.12.2022</h4>
+            <h4 class="date">05.04.2023</h4>
             <div class="teams">
               <img src="images/logo-small.svg" alt="Logo Small" />
               <div class="line"></div>
@@ -381,7 +381,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">09.12.2022</h4>
+            <h4 class="date">09.04.2023</h4>
             <div class="teams">
               <img class="image" src="images/bulldog.png" alt="Bullgdog" />
               <div class="line"></div>
@@ -394,7 +394,7 @@
             </div>
           </div>
           <div class="game-box">
-            <h4 class="date">13.12.2022</h4>
+            <h4 class="date">13.04.2023</h4>
             <div class="teams">
               <img class="image-1" src="images/borjomi.png" alt="Borjomi" />
               <div class="line"></div>
@@ -519,7 +519,7 @@
             <img
               class="picture"
               src="images/rink.jpg"
-              alt="Batumi Warrior's stadium"
+              alt="Batumi Warrior stadium"
             />
           </div>
           <div>
@@ -601,7 +601,10 @@
          <button class="lift" id="goToTop">
         <i class="fa-solid fa-chevron-up"></i>
       </button>
-      <div class="api" id="api"></div>
-      </footer>
+      <div class="api">
+        <input class="filtration" type="search" name="filtri" id="filter">
+        <ul id="resultat" class="userlist"></ul>
+      </div>
+    </footer>
   </body>
 </html>
